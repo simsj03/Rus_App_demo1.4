@@ -118,7 +118,7 @@ $(document).ready(function() {
           $("#add-note-form")[0].reset();
           $("#addNoteBtn").val('Add Note');
           Swal.fire({
-            title: 'Not sent successfully to admin!',
+            title: 'Note sent successfully to admin!',
             icon: 'success'
           });
           displayAllNotes();

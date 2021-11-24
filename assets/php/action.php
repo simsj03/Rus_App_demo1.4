@@ -72,14 +72,21 @@
 
 	    try {
 	      $mail->isSMTP();
-	      $mail->Host = 'smtp.gmail.com';                    
-	      $mail->SMTPAuth = true;                                  
-	      $mail->Username = Database::USERNAME;                    
-	      $mail->Password = Database::PASSWORD;                              
-	      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
-	      $mail->Port = 587;                                    
+	    //   $mail->Host = 'smtp.gmail.com';                    
+	    //   $mail->SMTPAuth = true;                                  
+	    //   $mail->Username = Database::USERNAME;                    
+	    //   $mail->Password = Database::PASSWORD;                              
+	    //   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
+	    //   $mail->Port = 587;
+		$mail->Host = 'smtp.gmail.com';                    
+		$mail->SMTPAuth = true;                                  
+		$mail->Username = 'jsims1712@gmail.com';                    
+		$mail->Password = 'gamer078';                              
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         
+		$mail->Port = 465;                                                
 
-	      $mail->setFrom(Database::USERNAME, 'RussellE');
+	      //$mail->setFrom(Database::USERNAME, 'RussellE');
+		  $mail->setFrom('jsims1712@gmail.com', 'RussellE');
 	      $mail->addAddress($email);     
 
 	      $mail->isHTML(true);                    
