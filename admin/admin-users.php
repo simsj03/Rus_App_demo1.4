@@ -127,7 +127,7 @@ $(document).ready(function() {
         if (data.photo != '') {
           $("#getImage").html('<img src="../assets/php/' + data.photo + '" class="img-thumbnail img-fluid align-self-center" width="280px">');
         } else {
-          $("#getImage").html('<img src="../assets/img/avatar.png" class="img-thumbnail img-fluid align-self-center" width="280px">');
+          $("#getImage").html('<img src="../assets/img/thumb-127739.png" class="img-thumbnail img-fluid align-self-center" width="280px">');
         }
 
       }
