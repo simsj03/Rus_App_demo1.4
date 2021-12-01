@@ -40,12 +40,12 @@
         <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <form action="#" method="post" id="add-note-form" class="px-3">
+        <form action="#" method="post" id="add-note-form" class="px-8">
           <div class="form-group">
-            <input type="text" name="title" class="form-control form-control-lg" placeholder="Enter Title" required>
+            <input type="text" name="title" class="form-control form-control-lg" placeholder="Sub, enter your Name and Note. (15 Words Max.)" required>
           </div>
           <div class="form-group">
-            <textarea name="note" class="form-control form-control-lg" placeholder="Write Your Note Here..." rows="6" required></textarea>
+            <textarea name="note" class="form-control form-control-lg" placeholder="Describe what took place for the day...(50 words Maximum)" rows="8" required></textarea>
           </div>
           <div class="form-group">
             <input type="submit" name="addNote" id="addNoteBtn" value="Send Report" class="btn btn-danger btn-block btn-lg">
@@ -66,13 +66,13 @@
         <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <form action="#" method="post" id="edit-note-form" class="px-3">
+        <form action="#" method="post" id="edit-note-form" class="px-8">
           <input type="hidden" name="id" id="id">
           <div class="form-group">
-            <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Enter Title" required>
+            <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Sub, enter your Name and Note. (15 Words Max.)" required>
           </div>
           <div class="form-group">
-            <textarea name="note" id="note" class="form-control form-control-lg" placeholder="Write Your Note Here..." rows="6" required></textarea>
+            <textarea name="note" id="note" class="form-control form-control-lg" placeholder="Describe what took place for the day...(50 words Maximum)" rows="8" required></textarea>
           </div>
           <div class="form-group">
             <input type="submit" name="editNote" id="editNoteBtn" value="Update Note" class="btn btn-info btn-block btn-lg btn-danger">
@@ -116,7 +116,7 @@ $(document).ready(function() {
           $("#add-note-form")[0].reset();
           $("#addNoteBtn").val('Add Note');
           Swal.fire({
-            title: 'Not sent successfully to admin!',
+            title: 'Note sent successfully to admin and Teacher!',
             icon: 'success'
           });
           displayAllNotes();
