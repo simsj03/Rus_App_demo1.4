@@ -14,10 +14,10 @@
         <div class="card-body">
           <form action="#" method="post" class="px-4" id="feedback-form">
             <div class="form-group">
-              <input type="text" name="subject" class="form-control-lg form-control rounded-0" placeholder="Subject" required>
+              <input type="text" name="subject" class="form-control-lg form-control rounded-0" placeholder="Please enter your Name and Name of Substitute (15 Words Max.)" required>
             </div>
             <div class="form-group">
-              <textarea name="feedback" class="form-control-lg form-control rounded-0" rows="8" placeholder="Write your feedback here..." required></textarea>
+              <textarea name="feedback" class="form-control-lg form-control rounded-0" rows="8" placeholder="Write your feedback here... (50 Words Maximum)" required></textarea>
             </div>
             <div class="form-group">
               <input type="submit" name="feedbackBtn" id="feedbackBtn" value="Send Feedback" class="btn btn-danger btn-block btn-lg rounded-0">

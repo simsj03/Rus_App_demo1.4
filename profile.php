@@ -48,7 +48,7 @@
                 </div>
                 <div class="card border-primary align-self-center">
                   <?php if (!$cphoto): ?>
-                  <img src="assets/img/avatar.png" class="img-thumbnail img-fluid" width="408px">
+                  <img src="assets/img/thumb-127739.png" class="img-thumbnail img-fluid" width="408px">
                   <?php else: ?>
                   <img src="<?= 'assets/php/' . $cphoto; ?>" class="img-thumbnail img-fluid" width="408px">
                   <?php endif; ?>
@@ -59,18 +59,18 @@
               <div class="card-deck">
                 <div class="card border-danger align-self-center">
                   <?php if (!$cphoto): ?>
-                  <img src="assets/img/avatar.png" class="img-thumbnail img-fluid" width="408px">
+                  <img src="assets/img/thumb-127739.png" class="img-thumbnail img-fluid" width="408px">
                   <?php else: ?>
                   <img src="<?= 'assets/php/' . $cphoto; ?>" class="img-thumbnail img-fluid" width="408px">
                   <?php endif; ?>
                 </div>
                 <div class="card border-danger">
                   <form action="" method="post" class="px-3 mt-2" enctype="multipart/form-data" id="profile-update-form">
-                    <input type="hidden" name="oldimage" value="<?= $cphoto; ?>">
-                    <div class="form-group m-0">
+                    <!-- <input type="hidden" name="oldimage" value="<?= $cphoto; ?>"> -->
+                    <!-- <div class="form-group m-0">
                       <label for="profilephoto" class="m-1">Upload Profile Image</label>
                       <input type="file" id="profilephoto" name="image">
-                    </div>
+                    </div> -->
                     <div class="form-group m-0">
                       <label for="name" class="m-1">Name</label>
                       <input type="text" name="name" id="name" class="form-control" value="<?= $cname; ?>">
