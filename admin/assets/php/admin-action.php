@@ -34,8 +34,7 @@
 											<th>Image</th>
 											<th>Name</th>
 											<th>E-Mail</th>
-											<th>Phone</th>
-											<th>Gender</th>
+										
 											<th>Verified</th>
 											<th>Action</th>
 										</tr>
@@ -45,15 +44,14 @@
 	      if ($row['photo'] != '') {
 	        $uphoto = $path . $row['photo'];
 	      } else {
-	        $uphoto = '../assets/img/avatar.png';
+	        $uphoto = '../assets/img/thub-127739.png';
 	      }
 	      $output .= '<tr>
 										<td>' . $row['id'] . '</td>
 										<td><img src="' . $uphoto . '" class="rounded-circle" width="40px"></td>
 										<td>' . $row['name'] . '</td>
 										<td>' . $row['email'] . '</td>
-										<td>' . $row['phone'] . '</td>
-										<td>' . $row['gender'] . '</td>
+										
 										<td>' . $row['verified'] . '</td>
 										<td>
 											<a href="#" id="' . $row['id'] . '" title="View Details" class="text-success userDetailsIcon" data-toggle="modal" data-target="#showUserDetailsModal"><i class="fas fa-info-circle fa-lg"></i></a>&nbsp;&nbsp;
