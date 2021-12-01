@@ -11,12 +11,12 @@
       <div class="card border-danger">
         <div class="card-header lead text-center bg-danger text-white">Send Feedback to admin.</div>
         <div class="card-body">
-          <form action="#" method="post" class="px-4" id="feedback-form">
+          <form action="#" method="post" class="px-6" id="feedback-form">
             <div class="form-group">
-              <input type="text" name="subject" class="form-control-lg form-control rounded-0" placeholder="Subject" required>
+              <input type="text" name="subject" class="form-control-lg form-control rounded-0" placeholder="Substitute, enter your Name and teacher you're subbing. (15 Words Max.) " required>
             </div>
             <div class="form-group">
-              <textarea name="feedback" class="form-control-lg form-control rounded-0" rows="8" placeholder="Write your feedback here..." required></textarea>
+              <textarea name="feedback" class="form-control-lg form-control rounded-0" rows="8" placeholder="Describe what took place for the day...(50 words Maximum)" required></textarea>
             </div>
             <div class="form-group">
               <input type="submit" name="feedbackBtn" id="feedbackBtn" value="Send Feedback" class="btn btn-danger btn-block btn-lg rounded-0">
