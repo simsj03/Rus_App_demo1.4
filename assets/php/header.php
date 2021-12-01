@@ -39,7 +39,10 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == 'home.php') ? 'active' : ''; ?>" href="<?= $base_url ?>/home.php"><i class="fas fa-home"></i>&nbsp;Home</a>
-</li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == 'urls.php') ? 'active' : ''; ?>" href="<?= $base_url ?>/urls.php"><i class="fas fa-link"></i>&nbsp;URL Section</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == 'profile.php') ? 'active' : ''; ?>" href="<?= $base_url ?>/profile.php"><i class="fas fa-user-circle"></i>&nbsp;Profile</a>
         </li>
