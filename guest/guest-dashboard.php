@@ -126,39 +126,39 @@ $(document).ready(function() {
   });
 
   //delete note of a user ajax request
-  $("body").on("click", ".deleteBtn", function(e) {
-    e.preventDefault();
-    var tr = $(this).closest('tr');
-    del_id = $(this).attr('id');
-    Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
-    }).then((result) => {
-      if (result.value) {
-        $.ajax({
-          url: 'assets/php/process.php',
-          type: 'post',
-          data: {
-            del_id: del_id
-          },
-          success: function(response) {
-            tr.css('background-color', '#ff6666');
-            Swal.fire({
-              title: 'Deleted!',
-              text: 'Note deleted successfully!.',
-              icon: 'success'
-            })
-            displayAllNotes();
-          }
-        });
-      }
-    });
-  });
+  // $("body").on("click", ".deleteBtn", function(e) {
+  //   e.preventDefault();
+  //   var tr = $(this).closest('tr');
+  //   del_id = $(this).attr('id');
+  //   Swal.fire({
+  //     title: 'Are you sure?',
+  //     text: "You won't be able to revert this!",
+  //     icon: 'warning',
+  //     showCancelButton: true,
+  //     confirmButtonColor: '#3085d6',
+  //     cancelButtonColor: '#d33',
+  //     confirmButtonText: 'Yes, delete it!'
+  //   }).then((result) => {
+  //     if (result.value) {
+  //       $.ajax({
+  //         url: 'assets/php/process.php',
+  //         type: 'post',
+  //         data: {
+  //           del_id: del_id
+  //         },
+  //         success: function(response) {
+  //           tr.css('background-color', '#ff6666');
+  //           Swal.fire({
+  //             title: 'Deleted!',
+  //             text: 'Note deleted successfully!.',
+  //             icon: 'success'
+  //           })
+  //           displayAllNotes();
+  //         }
+  //       });
+  //     }
+  //   });
+  // });
 
   // Edit note of a user
   $("body").on("click", ".editBtn", function(e) {
