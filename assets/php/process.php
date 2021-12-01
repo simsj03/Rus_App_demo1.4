@@ -217,77 +217,77 @@
 	}
 
 	// Handle fetch all public urls
-	// if (isset($_POST['fetchAllPublicUrls'])) {
-	//   $output = '';
-	//   $urls = $cuser->fetchPublicUrls();
-
-	//   if ($urls) {
-	//     $output .= '<table kclass="table table-sm table-bordered table-striped text-center">
-    //       <thead>
-    //       	<tr>
-    //       		<th>#</th>
-    //       		<th>URL</th>
-    //       		<th>Sent On</th>
-    //       		<th>Action</th>
-    //       	</tr>
-    //       </thead>
-    //       <tbody>';
-	//     foreach ($urls as $row) {
-	//       $output .= '<tr>
-	//           		<td>' . $row['id'] . '</td>
-	//           		<td><a href="' . $row['url'] . '" class="text-info" title="Open Link" target="_blank">' . $row['url'] . '</a></td>
-	//           		<td>' . $row['created_at'] . '</td>
-	//           		<td>
-	// 								<a jkhref="' . $row['url'] . '" class="badge badge-pill badge-primary p-2" title="Open Link" target="_blank">Open</a>
-	//           		</td>
-    //       	</tr>';
-	//     }
-	//     $output .= '</tbody></table>';
-	//     echo $output;
-	//   } else {
-	//     echo '<h3 class="text-center text-secondary">No public urls sent yet.</h3>';
-	//   }
-	// }
-
-	// Handle fetch all private urls
-	// if (isset($_POST['fetchAllPrivateUrls'])) {
-	//   $uid = $_POST['uid'];
-	//   $output = '';
-	//   $urls = $cuser->fetchPrivateUrls($uid);
-
-	//   if ($urls) {
-	//     $output .= '<table class="table table-sm table-bordered table-striped text-center" id="private-urls">
-    //       <thead>
-    //       	<tr>
-    //       		<th>#</th>
-    //       		<th>URL</th>
-    //       		<th>Sent On</th>
-    //       		<th>Action</th>
-    //       	</tr>
-    //       </thead>
-    //       <tbody>';
-	//     foreach ($urls as $row) {
-	//       $output .= '<tr>
-	//           		<td>' . $row['id'] . '</td>
-	//           		<td><a href="' . $row['url'] . '" class="text-info" title="Open Link" target="_blank">' . $row['url'] . '</a></td>
-	//           		<td>' . $row['created_at'] . '</td>
-	//           		<td>
-	// 								<a href="' . $row['url'] . '" class="badge badge-pill badge-primary p-2" title="Open Link" target="_blank">Open</a>
-
-	// 								<a href="#" id="' . $row['id'] . '" class="badge badge-pill badge-danger p-2 deleteUrlIcon" title="Delete Link">Delete</a>
-	//           		</td>
-    //       	</tr>';
-	//     }
-	//     $output .= '</tbody></table>';
-	//     echo $output;
-	//   } else {
-	//     echo '<h3 dlass="text-center text-secondary"> You have not received any URLs yet.</h3>';
-	//   }
-	// }
-
-	// Handle delete private url
-	// if (isset($_POST['delete_url_id'])) {
-	//   $url_id = $_POST['delete_url_id'];
-	//   $cuser->deletesPrivateUrl($url_id);
-	// }
+	if (isset($_POST['fetchAllPublicUrls'])) {
+		$output = '';
+		$urls = $cuser->fetchPublicUrls();
+  
+		if ($urls) {
+		  $output .= '<table class="table table-sm table-bordered table-striped text-center">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>URL</th>
+					<th>Sent On</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>';
+		  foreach ($urls as $row) {
+			$output .= '<tr>
+						<td>' . $row['id'] . '</td>
+						<td><a href="' . $row['url'] . '" class="text-info" title="Open Link" target="_blank">' . $row['url'] . '</a></td>
+						<td>' . $row['created_at'] . '</td>
+						<td>
+									  <a href="' . $row['url'] . '" class="badge badge-pill badge-primary p-2" title="Open Link" target="_blank">Open</a>
+						</td>
+				</tr>';
+		  }
+		  $output .= '</tbody></table>';
+		  echo $output;
+		} else {
+		  echo '<h3 class="text-center text-secondary">:( No public urls sent yet!</h3>';
+		}
+	  }
+  
+	  // Handle fetch all private urls
+	  if (isset($_POST['fetchAllPrivateUrls'])) {
+		$uid = $_POST['uid'];
+		$output = '';
+		$urls = $cuser->fetchPrivateUrls($uid);
+  
+		if ($urls) {
+		  $output .= '<table class="table table-sm table-bordered table-striped text-center" id="private-urls">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>URL</th>
+					<th>Sent On</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>';
+		  foreach ($urls as $row) {
+			$output .= '<tr>
+						<td>' . $row['id'] . '</td>
+						<td><a href="' . $row['url'] . '" class="text-info" title="Open Link" target="_blank">' . $row['url'] . '</a></td>
+						<td>' . $row['created_at'] . '</td>
+						<td>
+									  <a href="' . $row['url'] . '" class="badge badge-pill badge-primary p-2" title="Open Link" target="_blank">Open</a>
+  
+									  <a href="#" id="' . $row['id'] . '" class="badge badge-pill badge-danger p-2 deleteUrlIcon" title="Delete Link">Delete</a>
+						</td>
+				</tr>';
+		  }
+		  $output .= '</tbody></table>';
+		  echo $output;
+		} else {
+		  echo '<h3 class="text-center text-secondary">:( You have not received any URL!</h3>';
+		}
+	  }
+  
+	  // Handle delete private url
+	  if (isset($_POST['delete_url_id'])) {
+		$url_id = $_POST['delete_url_id'];
+		$cuser->deletePrivateUrl($url_id);
+	  }
 ?>
