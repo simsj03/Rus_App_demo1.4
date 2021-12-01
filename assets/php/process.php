@@ -39,7 +39,7 @@
 	      $output .= '<tr>
 	          		<td>' . $row['id'] . '</td>
 	          		<td>' . $row['title'] . '</td>
-	          		<td>' . substr($row['note'],0,75) . '...</td>
+	          		<td>' . substr($row['note'],0,75) . '</td>
 	          		<td>
 	          			<a href="#" class="text-success infoBtn" title="View Details" id="' . $row['id'] . '"><i class="fas fa-info-circle fa-lg"></i></a>&nbsp;
 

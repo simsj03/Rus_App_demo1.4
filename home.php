@@ -42,12 +42,12 @@
         <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <form action="#" method="post" id="add-note-form" class="px-3">
+        <form action="#" method="post" id="add-note-form" class="px-6">
           <div class="form-group">
-            <input type="text" name="title" class="form-control form-control-lg" placeholder="Enter Title" required>
+            <input type="text" name="title" class="form-control form-control-lg" placeholder="Enter Name and describe Note  (15 Words Max)" required>
           </div>
           <div class="form-group">
-            <textarea name="note" class="form-control form-control-lg" placeholder="Write Your Note Here..." rows="6" required></textarea>
+            <textarea name="note" class="form-control form-control-lg" placeholder="Write Your Note Here... (50 Words Maximum)" rows="6" required></textarea>
           </div>
           <div class="form-group">
             <input type="submit" name="addNote" id="addNoteBtn" value="Send Report" class="btn btn-danger btn-block btn-lg">
@@ -68,13 +68,13 @@
         <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <form action="#" method="post" id="edit-note-form" class="px-3">
+        <form action="#" method="post" id="edit-note-form" class="px-6">
           <input type="hidden" name="id" id="id">
           <div class="form-group">
-            <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Enter Title" required>
+            <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Enter Name and describe Note  (15 Words Max)" required>
           </div>
           <div class="form-group">
-            <textarea name="note" id="note" class="form-control form-control-lg" placeholder="Write Your Note Here..." rows="6" required></textarea>
+            <textarea name="note" id="note" class="form-control form-control-lg" placeholder="Write Your Note Here... (50 Words Maximum)" rows="6" required></textarea>
           </div>
           <div class="form-group">
             <input type="submit" name="editNote" id="editNoteBtn" value="Update Note" class="btn btn-info btn-block btn-lg">
