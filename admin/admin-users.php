@@ -119,9 +119,9 @@ $(document).ready(function() {
         data = JSON.parse(response);
         $("#getName").text(data.name + ' ' + '(ID : ' + data.id + ')');
         $("#getEmail").text('Email : ' + data.email);
-        $("#getPhone").text('Phone : ' + data.phone);
-        $("#getGender").text('Gender : ' + data.gender);
-        $("#getDob").text('DOB : ' + data.dob);
+        // $("#getPhone").text('Phone : ' + data.phone);
+        // $("#getGender").text('Gender : ' + data.gender);
+        // $("#getDob").text('DOB : ' + data.dob);
         $("#getCreatedAt").text('Joined On : ' + data.created_at);
         $("#getVerified").text('Verified : ' + data.verified);
         if (data.photo != '') {
