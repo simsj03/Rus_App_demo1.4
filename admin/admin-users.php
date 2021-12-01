@@ -33,9 +33,9 @@
           <div class="card border-primary">
             <div class="card-body">
               <p id="getEmail"></p>
-              <p id="getPhone"></p>
+              <!-- <p id="getPhone"></p>
               <p id="getDob"></p>
-              <p id="getGender"></p>
+              <p id="getGender"></p> -->
               <p id="getCreatedAt"></p>
               <p id="getVerified"></p>
             </div>
