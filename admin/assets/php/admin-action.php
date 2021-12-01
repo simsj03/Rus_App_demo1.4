@@ -44,7 +44,7 @@
 	      if ($row['photo'] != '') {
 	        $uphoto = $path . $row['photo'];
 	      } else {
-	        $uphoto = '../assets/img/thub-127739.png';
+	        $uphoto = '../assets/img/thumb-127739.png';
 	      }
 	      $output .= '<tr>
 										<td>' . $row['id'] . '</td>
