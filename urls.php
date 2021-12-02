@@ -24,7 +24,7 @@
             </div>
 
             <div class="tab-pane" id="public" role="tabpanel" aria-labelledby="public-tab">
-              <h4 class="mt-4 text-center text-danger">URLs are loading please wait...</h4>
+              <h4 class="mt-4 text-center text-secondary">URLs are loading please wait...</h4>
             </div>
 
           </div>
