@@ -14,9 +14,9 @@
 	$cid = $data['id'];
 	$cname = $data['name'];
 	$cpassword = $data['password'];
-	$cphone = $data['phone'];
-	$cgender = $data['gender'];
-	$cdob = $data['dob'];
+	// $cphone = $data['phone'];
+	// $cgender = $data['gender'];
+	// $cdob = $data['dob'];
 	$cphoto = $data['photo'];
 	$created = $data['created_at'];
 	$verified = $data['verified'];
