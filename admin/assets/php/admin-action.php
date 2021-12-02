@@ -115,8 +115,7 @@
 										<td><img src="' . $uphoto . '" class="rounded-circle" width="40px"></td>
 										<td>' . $row['name'] . '</td>
 										<td>' . $row['email'] . '</td>
-										<td>' . $row['phone'] . '</td>
-										<td>' . $row['gender'] . '</td>
+									
 										<td>' . $row['verified'] . '</td>
 										<td>
 											<a href="#" id="' . $row['id'] . '" title="Restore User" class="text-white userRestoreIcon badge badge-dark p-2">Restore</a>
@@ -127,7 +126,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary">:( No deleted users</h3>';
+	    echo '<h3 class="text-center text-secondary"> No deleted users</h3>';
 	  }
 	}
 
