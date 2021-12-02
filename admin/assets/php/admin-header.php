@@ -82,6 +82,8 @@
 
           <a href="<?= $base_url ?>/admin/admin-notification.php" class="list-group-item text-light admin-link <?= (basename($_SERVER['PHP_SELF']) == 'admin-notification.php') ? 'nav-active' : ''; ?>"><i class="fas fa-bell"></i>&nbsp;&nbsp;Notification&nbsp;<span id="showNotificationCheck"></span></a>
 
+          <a href="<?= $base_url ?>/admin/admin-url_management.php" class="list-group-item text-light admin-link <?= (basename($_SERVER['PHP_SELF']) == 'admin-url_management.php') ? 'nav-active' : ''; ?>"><i class="fas fa-link"></i>&nbsp;&nbsp;URL Management</a>
+
           <a href="<?= $base_url ?>/admin/admin-deleteduser.php" class="list-group-item text-light admin-link <?= (basename($_SERVER['PHP_SELF']) == 'admin-deleteduser.php') ? 'nav-active' : ''; ?>"><i class="fas fa-user-slash"></i>&nbsp;&nbsp;Deleted Users</a>
 
 
