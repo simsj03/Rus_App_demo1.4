@@ -98,8 +98,7 @@
 											<th>Image</th>
 											<th>Name</th>
 											<th>E-Mail</th>
-											<th>Phone</th>
-											<th>Gender</th>
+											
 											<th>Verified</th>
 											<th>Action</th>
 										</tr>
@@ -109,7 +108,7 @@
 	      if ($row['photo'] != '') {
 	        $uphoto = $path . $row['photo'];
 	      } else {
-	        $uphoto = '../assets/img/avatar.png';
+	        $uphoto = '../assets/img/thumb-127739.png';
 	      }
 	      $output .= '<tr>
 										<td>' . $row['id'] . '</td>
