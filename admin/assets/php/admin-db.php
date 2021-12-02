@@ -70,14 +70,14 @@
 	  }
 
 	  //Export All users to excel
-	  public function exportAllUsers() {
-	    $sql = 'SELECT * FROM users';
-	    $stmt = $this->conn->prepare($sql);
-	    $stmt->execute();
-	    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	//   public function exportAllUsers() {
+	//     $sql = 'SELECT * FROM users';
+	//     $stmt = $this->conn->prepare($sql);
+	//     $stmt->execute();
+	//     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-	    return $result;
-	  }
+	//     return $result;
+	//   }
 
 	  //Fetch all notes with user info
 	  public function fetchAllNotes() {
