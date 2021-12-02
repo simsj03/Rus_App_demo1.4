@@ -34,7 +34,7 @@
 											<th>Image</th>
 											<th>Name</th>
 											<th>E-Mail</th>
-										
+											
 											<th>Verified</th>
 											<th>Action</th>
 										</tr>
@@ -51,7 +51,7 @@
 										<td><img src="' . $uphoto . '" class="rounded-circle" width="40px"></td>
 										<td>' . $row['name'] . '</td>
 										<td>' . $row['email'] . '</td>
-										
+									
 										<td>' . $row['verified'] . '</td>
 										<td>
 											<a href="#" id="' . $row['id'] . '" title="View Details" class="text-success userDetailsIcon" data-toggle="modal" data-target="#showUserDetailsModal"><i class="fas fa-info-circle fa-lg"></i></a>&nbsp;&nbsp;
@@ -66,7 +66,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary">:( No registered users</h3>';
+	    echo '<h3 class="text-center text-secondary"> No any user registered yet!</h3>';
 	  }
 	}
 
@@ -126,7 +126,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary"> No deleted users</h3>';
+	    echo '<h3 class="text-center text-secondary"> No any user deleted yet!</h3>';
 	  }
 	}
 
@@ -151,6 +151,7 @@
 	// 					<th>Name</th>
 	// 					<th>E-Mail</th>
 	// 					<th>Phone</th>
+	// 					<th>Gender</th>
 	// 					<th>DOB</th>
 	// 					<th>Joined Date</th>
 	// 					<th>Verified</th>
@@ -162,6 +163,7 @@
 	// 						<td>' . $row['name'] . '</td>
 	// 						<td>' . $row['email'] . '</td>
 	// 						<td>' . $row['phone'] . '</td>
+	// 						<td>' . $row['gender'] . '</td>
 	// 						<td>' . $row['dob'] . '</td>
 	// 						<td>' . $row['created_at'] . '</td>
 	// 						<td>' . $row['verified'] . '</td>
@@ -208,7 +210,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary">:( No new notes</h3>';
+	    echo '<h3 class="text-center text-secondary"> No any note written yet!</h3>';
 	  }
 	}
 
@@ -240,7 +242,7 @@
 	    }
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary mt-5">No new notifications</h3>';
+	    echo '<h3 class="text-center text-secondary mt-5">No any new notification!</h3>';
 	  }
 	}
 
@@ -297,7 +299,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary">:( No new feedback</h3>';
+	    echo '<h3 class="text-center text-secondary">:( No any feedback written yet!</h3>';
 	  }
 	}
 
@@ -358,7 +360,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary">:( No URL sent</h3>';
+	    echo '<h3 class="text-center text-secondary"> No any URL sent yet!</h3>';
 	  }
 	}
 
@@ -434,7 +436,7 @@
 								</table>';
 	    echo $output;
 	  } else {
-	    echo '<h3 class="text-center text-secondary">:( No deleted URL</h3>';
+	    echo '<h3 class="text-center text-secondary"> No any user deleted any URL yet!</h3>';
 	  }
 	}
 
