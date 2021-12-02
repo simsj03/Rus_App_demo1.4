@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="card my-2 border-secondary">
-      <div class="card-header bg-warning text-white flex-row d-flex justify-content-between align-items-center">
+      <div class="card-header bg-light text-white flex-row d-flex justify-content-between align-items-center">
         <h4 class="m-0 text-dark">All URLs</h4>
         <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#sendUrlModal"><i class="fas fa-link fa-lg pr-2"></i>Send Public URL</button>
         <a href="#" id="deleteAllUrlsBtn" class="btn btn-warning"><i class="fas fa-trash fa-lg pr-2"></i>Delete All Public URLs</a>
@@ -22,12 +22,12 @@
 </div>
 
 <!-- Insert URL Modal Start -->
-<!-- <div class="modal fade" tabindex="-1" id="sendUrlModal" role="dialog">
+<div class="modal fade" tabindex="-1" id="sendUrlModal" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Send URLs To All Users</h5>
-        <button type="button" class="close" data-dismiss="modal" a1ria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -36,7 +36,7 @@
           <div class="form-group">
             <label for="url">Enter URLs</label>
             <textarea name="url" id="url" rows="6" class="form-control" placeholder="Enter your urls here..." required></textarea>
-            <div cklass="small text-muted">You can enter one or more urls here. Use comma (,) to seprate each urls. <br> Eg: https://google.com,https://facebook.com,http://anyurl.com/</div>
+            <div class="small text-muted">You can enter one or more urls here. Use comma (,) to seprate each urls. <br> Eg: https://google.com,https://facebook.com,http://anyurl.com/</div>
           </div>
           <div class="form-group">
             <input type="submit" value="Send" class="btn btn-danger btn-lg btn-block" id="url-btn">
@@ -45,7 +45,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 <!-- Insert URl Modal End -->
 
 <!-- Edit URL Modal Start -->
@@ -187,38 +187,38 @@ $(document).ready(function() {
   });
 
   //delete public url ajax request
-  // $("body").on("click", ".urlDeleteIcon", function(e) {
-  //   e.preventDefault();
-  //   del_iurl_id = $(this).attr('id');
-  //   Swal.fire({
-  //     title: 'Are you sure?',
-  //     text: "You won't be able to revert this!",
-  //     icon: 'warning',
-  //     showCancelButton: true,
-  //     confirmButtonColor: '#3085d6',
-  //     cancelButtonColor: '#d33',
-  //     confirmButtonText: 'Yes, delete it!'
-  //   }).then((result) => {
-  //     if (result.value) {
-  //       $.ajax({
-  //         url: 'assets/php/admin-action.php',
-  //         type: 'post',
-  //         data: {
-  //           del_url_id: del_url_id
-  //         },
-  //         success: function(response) {
-  //           // console.log(response);
-  //           Swal.fire({
-  //             title: 'Deleted!',
-  //             text: 'URL deleted successfully!.',
-  //             icon: 'success'
-  //           })
-  //           fetchAllPublicUrl();
-  //         }
-  //       });
-  //     }
-  //   });
-  // });
+  $("body").on("click", ".urlDeleteIcon", function(e) {
+    e.preventDefault();
+    del_url_id = $(this).attr('id');
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.value) {
+        $.ajax({
+          url: 'assets/php/admin-action.php',
+          type: 'post',
+          data: {
+            del_url_id: del_url_id
+          },
+          success: function(response) {
+            // console.log(response);
+            Swal.fire({
+              title: 'Deleted!',
+              text: 'URL deleted successfully!.',
+              icon: 'success'
+            })
+            fetchAllPublicUrl();
+          }
+        });
+      }
+    });
+  });
 
   //delete all public url ajax request
   $("#deleteAllUrlsBtn").click(function(e) {
