@@ -6,7 +6,7 @@
     <div class="col-lg-8 mt-3">
       <?php if ($verified == 'Verified!'): ?>
         <h2>We want to hear from you!</h2>
-          <h3>How did the Guest Teacher preform?</h3>
+          <h3>Please provide us with your Feedback.</h3>
   
 
       <div class="card border-danger">
