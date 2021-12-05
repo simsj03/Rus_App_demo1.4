@@ -193,13 +193,5 @@
 	    $stmt->execute(['id' => $id, 'status' => 'private']);
 	    return true;
 	  }
-
-	  //Upload filesto database
-	  public function upload($filename) {
-		$sql = "INSERT INTO files (name, size, downloads) VALUES ('$filename', $size, 0)";
-	    $stmt = $this->conn->prepare($sql);
-	    $stmt->execute(['name' => $name, 'email' => $email, 'password' => $password]);
-	    return true;
-	  }
 	}
 ?>
