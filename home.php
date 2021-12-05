@@ -50,7 +50,7 @@
             <textarea name="note" class="form-control form-control-lg" placeholder="Write Your Note Here... (50 Words Maximum)" rows="6" required></textarea>
           </div>
           <div class="form-group">
-            <input type="submit" name="addNote" id="addNoteBtn" value="Send Report" class="btn btn-danger btn-block btn-lg">
+            <input type="submit" name="addNote" id="addNoteBtn" value="Send Note" class="btn btn-danger btn-block btn-lg">
           </div>
         </form>
       </div>
