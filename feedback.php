@@ -14,7 +14,7 @@
         <div class="card-body">
           <form action="#" method="post" class="px-4" id="feedback-form">
             <div class="form-group">
-              <input type="text" name="subject" class="form-control-lg form-control rounded-0" placeholder="Please enter your Name and Name of Substitute (15 Words Max.)" required>
+              <input type="text" name="subject" class="form-control-lg form-control rounded-0" placeholder="Please enter the Class Name here. (15 Words Max.)" required>
             </div>
             <div class="form-group">
               <textarea name="feedback" class="form-control-lg form-control rounded-0" rows="8" placeholder="Write your feedback here... (50 Words Maximum)" required></textarea>
