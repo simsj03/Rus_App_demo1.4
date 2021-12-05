@@ -26,7 +26,7 @@
         </div>
       </div>
       <?php else: ?>
-      <h1 class="text-center text-dark mt-5">To verify your E-Mail, send Feedback to admin.</h1>
+      <h1 class="text-center text-dark mt-5">To send feedback to Admin, verify your email please.</h1>
       <?php endif; ?>
     </div>
   </div>
